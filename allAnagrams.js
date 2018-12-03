@@ -1,9 +1,23 @@
-// Starting hints in Standardized Basic:
 
 function allAnagrams (string) {
-  // Write your code here, and
-  // return your final answer.
+  let len = string.length;
+  let res = [];
+
+  function permutations(str) {
+    if(str.length === 1) {
+      res.push([string]);
+    } else {
+      permutations(str.slice(1));
+      for(let j=0; j<str.length-1; j++) {
+        let c=str[j];
+        str[j]=str[i];
+        str[i]=c;
+      }
+    }
+  }
+
 }
+
 
 // 100 PROGRAM "Permutat.bas"
 // 110 LET N=4 // Number of elements
